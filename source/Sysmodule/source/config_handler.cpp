@@ -5,6 +5,7 @@
 #include "log.h"
 #include "ini.h"
 #include <cstring>
+#include <array>
 #include "usb_module.h"
 #include "SwitchUtils.h"
 
@@ -28,7 +29,7 @@ namespace syscon::config
 
         bool is_config_changed_check_thread_running = false;
 
-        constexpr std::array keyNames{
+        constexpr std::array<const char*, 24> keyNames{
             "DEFAULT",
             "NONE",
             "FACE_UP",

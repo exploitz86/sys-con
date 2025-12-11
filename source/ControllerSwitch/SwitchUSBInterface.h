@@ -3,6 +3,7 @@
 #include "IUSBInterface.h"
 #include <memory>
 #include <vector>
+#include <array>
 
 class SwitchUSBInterface : public IUSBInterface
 {
